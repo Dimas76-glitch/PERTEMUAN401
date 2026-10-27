@@ -12,20 +12,35 @@
     </style>
 
 </head>
-<body>
+    <body>
+        <div class="rTengah">
+            <div class="kartu-profile"> 
+                <H1> Rusdi Store </H1>
+                <p>High Store</p>
 
-    <div class="kartu-profile"> 
-        <H1> Rusdi Ambalabu </H1>
-        <p>Kecepatan UltraSonic</p>
+                <button id="btnDetail" onclick="detail()" class="button_detail">Info Detail </button>
+            </div>
 
-        <button onclick="detail()" class="button_detail">Info Detail </button>
+         </div>
+    <div class="rTengah">
+
+    <div class="info-detail" id="infobox">
+        Informasi detail Rusdi Ambalabu
+        <button onclick="tutupdetail()" class="btn-close">&times;</button>
     </div>
-
 
     <script>
         function detail(){
-            alert("Kematian Prakonto");
-        }
+            //alert(" balik lagi");
+            var info = document.getElementById("infobox");
+            var btnDetail = document.getElementById("btnDetail");
+
+            if(info.style.display === "none" ||  info.style.display == ""){
+                info.style.display ="block";
+                btnDetail.style.display = "none";
+            }
+            else if(info.style.display = "none");
+}
 
     </script> 
 
